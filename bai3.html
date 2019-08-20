@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular Expression</title>
+</head>
+<body>
+<script>
+    let regexpVowel = /[aăâeêioôơwuưy]/ig;
+    let regexpConsonant = /[^aăâeêioôơwuưy]/ig;
+    function is_countVowel(str) {
+        let countVowel = str.match(regexpVowel);
+        return alert(countVowel.length);
+    }
+    function is_countConsonant(str) {
+        let countConsonant = str.match(regexpConsonant);
+        return alert(countConsonant.length);
+    }
+    let string = prompt();
+    is_countVowel(string);
+    is_countConsonant(string);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular Expression</title>
+</head>
+<body>
+<script>
+    let regexp = /[0123][0-9]\/[01][0-9]\/[0-9]{4}/;
+    function is_validateDate(str) {
+        if(regexp.test(str)){
+            alert("True!");
+        }else{
+            alert("False!");
+        }
+    }
+    // let date = prompt();
+    is_validateDate('08/08/2012');
+    is_validateDate('02/12/2019');
+    is_validateDate('081/055/2015');
+    is_validateDate('34/21/2019');
+</script>
+</body>
+</html>

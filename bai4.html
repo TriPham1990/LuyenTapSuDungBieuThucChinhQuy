@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular Expression</title>
+</head>
+<body>
+<script>
+    let regexpPassWord = /(password|codegym)/;
+    function is_passWord(password) {
+        if(regexpPassWord.test(password)){
+            alert("Enter the correct password!");
+        }else{
+            alert("Wrong password!")
+        }
+    }
+    let enterPassword = prompt("Enter the password!");
+    is_passWord(enterPassword);
+</script>
+</body>
+</html>
